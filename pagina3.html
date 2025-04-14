@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias Sociales</title>
+    <link rel="stylesheet" href="/css/stylepagina3.css">
+    <link rel="shortcut icon" href="/assets/icono.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+
+<div class="cuadrotit">
+    <h1>Desventajas Del Estado De Bienestar</h1>
+</div>
+
+<p class="subt">De las ventajas que destacan mas son...</p>
+
+<div class="contenido">
+
+    <div class="concepto">
+        <p>
+            1. Dependencia y fines políticos: Los apoyos pueden generar dependencia en la población y ser utilizados con fines electorales más que sociales.
+        </p>
+        <p>
+            2. Costo y desigualdad: Su alto costo pone en duda su sostenibilidad, y no siempre benefician a todos por igual, dejando fuera a sectores medios.
+        </p>
+    </div>
+    <div>
+     <img class="imagen" src="assets/desv.png" alt="">
+    </div>        
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & José Manuel Andrade Marín</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+</body>
+<script>    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

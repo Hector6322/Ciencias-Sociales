@@ -1,0 +1,94 @@
+body {
+background-color: #ffd8d8;
+}
+
+#content {
+    margin-top: 5.5rem;
+}
+
+#menu-container {
+    height: 5.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ff7f7f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #662323;
+    margin-left: -0.5rem;
+    width: 98.2%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.cuadrotit {
+    margin-top: 6rem;
+    background-color: #c94646;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.contenido {
+   position: relative; 
+   display: flex;
+   align-items: flex-start;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+.subt {
+    font-size: 2.8rem;
+    margin-block: auto;
+    margin-left: 0.5rem;
+}   
+
+.concepto {
+    width: 35rem;
+    height: auto;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.imagen {
+    width: auto;
+    height: auto;
+    background-color: #d32b2b;
+}

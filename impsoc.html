@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias Sociales</title>
+    <link rel="stylesheet" href="/css/styleimpsoc.css">
+    <link rel="shortcut icon" href="/assets/icono.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+
+<div class="cuadrotit">
+    <h1>Impactos sociales del Estado del bienestar</h1>
+</div>
+
+<p class="subt">Algunos de los impactos sociales son...</p>
+
+<div class="contenido">
+
+    <div class="concepto">
+        <p>Uno de los impactos más notables fue la reducción de la pobreza y la desigualdad. A través de
+            politicas fiscales progresivas y programas de transferencias sociales como subsidios y ayudas
+            directas, se logró una redistribución más equitativa de la riqueza, lo que ayudó a disminuir las
+            brechas economicas entre diferentes segmentos de la población.
+        </p>
+        <p>
+            Además, el acceso universal
+            a servicios básicos como salud y educación, ofrecido de manera gratuita o subsidiada permitió
+            a las personas de bajos ingresos mejorar su calidad de vida y ampliar sus oportunidades. 
+        </p>
+    </div>
+    <div>
+        <img class="imagen" src="/assets/dadinirt.jpeg" alt="Estado del bienestar">
+    </div>        
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & José Manuel Andrade Marín</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+</body>
+<script>    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

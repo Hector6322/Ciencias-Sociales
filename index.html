@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias Sociales</title>
+    <link rel="stylesheet" href="/css/styleindex.css">
+    <link rel="shortcut icon" href="/assets/icono.jpeg" type="image/x-icon">
+</head>
+<body>
+<div id="menu-container"></div>
+<div id="content"></div>
+<div class="cuadrotit">
+    <h1 class="titulo">El Estado Del Bienestar</h1>
+</div>
+
+
+<p class="subt">Estado del bienestar</p>
+
+<div class="contenido">
+
+    <div class="concepto">
+        <p>EI Estado de bienestar es un concepto
+            central que nos ayuda a comprender
+            la política económica, la organización
+            de la sociedad, el marco normativo,
+            las instituciones y el papel del Estado. Este modelo se caracteriza por la
+            intervención activa del Estado en la
+            economía y la sociedad, con el objetivo de garantizar el bienestar social y
+            económico de su ciudadanía.
+        </p>
+    </div>
+    <div>
+        <img class="imagen" src="/assets/estado3bien.jpg" alt="Estado del bienestar">
+    </div>        
+</div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & José Manuel Andrade Marín</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+</body>
+<script>    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>

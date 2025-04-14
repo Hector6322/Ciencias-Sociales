@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias Sociales</title>
+    <link rel="stylesheet" href="/css/stylepagina2.css">
+    <link rel="shortcut icon" href="/assets/icono.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div id="content"></div>
+
+<div class="cuadrotit">
+    <h1>Criticas Del Estado De Bienestar</h1>
+</div>
+
+<p class="subt">Algunas de las criticas que han tenido mas relevancia...</p>
+
+<div class="contenido">
+
+    <div class="concepto">
+        <p>El Estado de bienestar ha sido criticado por su alto costo fiscal, que puede generar deuda 
+            y afectar la economía, así como por desincentivar el trabajo y fomentar la dependencia. 
+            También se cuestiona la distribución desigual de sus beneficios, lo que puede generar divisiones 
+            sociales, y su impacto negativo en la competencia del sector privado. 
+        </p>
+        <p>
+            Además, se considera 
+            que sus políticas son rígidas y poco adaptables a los cambios actuales. Desde lo ideológico, 
+            se le critica por limitar la libertad individual, debilitar valores como el esfuerzo personal 
+            o no abordar las causas profundas de la desigualdad.
+        </p>
+    </div>
+    <div>
+     <img class="imagen" src="assets/criticas.jpeg" alt="">
+    </div>        
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Derechos reservados para Hector Hugo de Lira Salas & José Manuel Andrade Marín</p>
+            <nav class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+</body>
+<script>    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        });
+</script>
+
+</html>
